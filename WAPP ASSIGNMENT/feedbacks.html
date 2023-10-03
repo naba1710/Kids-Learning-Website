@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>
+
+    </title>
+    <link href="BEGINNER.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 191px;
+            height: 152px;
+        }
+
+        .auto-style2 {
+            width: 50px;
+            height: 41px;
+        }
+
+        h1 {
+            font-family: Snap ITC;
+            font-color: red;
+        }
+
+        table {
+            font-family: Snap ITC;
+            font-size: 15px border-collapse: collapse;
+            width: 90%;
+        }
+
+        td, th {
+            border: 2px solid pink;
+            text-align: left;
+            padding: 50px;
+            background-color: yellow;
+            font-size: 30px;
+    </style>
+
+
+    <body style="height: 543px">
+        <div class="header">
+            <img src="LOGO.jpg" class="auto-style1" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br />
+
+        </div>
+        <form id="form2" runat="server">
+            <div class="wrapper">
+                <div class="menu">
+                    <ul>
+                        <li><a href="homelogin.html"><img src="home.png" class="auto-style2" /></a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropbtn">TOPICS</a>
+                            <div class="dropdown-content">
+                                <a href="fruits.html">INTERMEDIATE</a>
+                                <ul>
+                                    <li>
+
+                                        <a href="Alphabets.html">ALPHABETS</a>
+                                        <a href="colours.html">COLOURS</a>
+                                    </li>
+                                </ul>
+
+                                <a href="index.html">INTERMEDIATE</a>
+                                <ul>
+                                    <li>
+                                        <a href="fruits.html">FRUITS</a>
+                                        <a href="daysoftheweek.html">DAYS OF THE WEEK</a>
+                                    </li>
+                                </ul>
+                                <a href="#">ADVANCED</a>
+                                <ul>
+                                    <li>
+                                        <a href="animals.aspx">ANIMALS</a>
+                                        <a href="furniture.aspx">THINGS</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">WATCH VIDEO</a></li>
+                        <li><a href="#">MY PROFILE</a></li>
+                        <li><a href="#">COMMENT SECTION</a></li>
+                    </ul>
+                    <p>
+                        &nbsp;
+                    </p>
+                </div>
+            </div>
+
+
+
+
+            <div class=h1>
+                <h1 style="color:blue;text-align:left;">Leave your comment here</h1>
+            </div>
+
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">
+                        <asp:Label ID="Label1" runat="server" Text="Name"></asp:Label>
+                    </td>
+                    <td>
+                        <asp:TextBox ID="name" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">
+                        <asp:Label ID="Label2" runat="server" Text="Email"></asp:Label>
+                    </td>
+                    <td>
+                        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style3">
+                        <asp:Label ID="Label3" runat="server" Text="Comment"></asp:Label>
+                    </td>
+                    <td class="auto-style4">
+                        <asp:TextBox ID="TextBox3" runat="server" Height="201px" Width="428px"></asp:TextBox>
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+    </body>
+</html>

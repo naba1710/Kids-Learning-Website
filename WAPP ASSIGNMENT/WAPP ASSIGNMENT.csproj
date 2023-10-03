@@ -1,0 +1,701 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{37733ADA-8FEC-4E0B-92C7-36153BD106F2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WAPP_ASSIGNMENT</RootNamespace>
+    <AssemblyName>WAPP ASSIGNMENT</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44313</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.4.1\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.3.4.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="5-stars-removebg-preview %281%29.png" />
+    <Content Include="A.png" />
+    <Content Include="About.aspx" />
+    <Content Include="Aboutus.aspx" />
+    <Content Include="admin.aspx" />
+    <Content Include="admin.css" />
+    <Content Include="admin.png" />
+    <Content Include="ADMINLOGIN.aspx" />
+    <Content Include="adminpic.jfif" />
+    <Content Include="AdminReadPage.aspx" />
+    <Content Include="alphabetback.jpg" />
+    <Content Include="Alphabets.html" />
+    <Content Include="animal.css" />
+    <Content Include="Animals.html" />
+    <Content Include="Animals\alligator.png" />
+    <Content Include="Animals\bg3.jpg" />
+    <Content Include="Animals\bird.png" />
+    <Content Include="Animals\butterfly.png" />
+    <Content Include="Animals\camel.png" />
+    <Content Include="Animals\cat.png" />
+    <Content Include="Animals\chicken.png" />
+    <Content Include="Animals\cow.png" />
+    <Content Include="Animals\duck.png" />
+    <Content Include="Animals\elephant.png" />
+    <Content Include="Animals\fish.png" />
+    <Content Include="Animals\frog.png" />
+    <Content Include="Animals\giraffe.png" />
+    <Content Include="Animals\goat.png" />
+    <Content Include="Animals\gorilla.png" />
+    <Content Include="Animals\hippo.png" />
+    <Content Include="Animals\kangaroo.png" />
+    <Content Include="Animals\koala.png" />
+    <Content Include="Animals\lamb.png" />
+    <Content Include="Animals\monkey.png" />
+    <Content Include="Animals\mouse.png" />
+    <Content Include="Animals\panda.png" />
+    <Content Include="Animals\pig.png" />
+    <Content Include="Animals\rabbit.png" />
+    <Content Include="Animals\snake.png" />
+    <Content Include="Animals\tiger.png" />
+    <Content Include="apple.mp3" />
+    <Content Include="APPLE.png" />
+    <Content Include="App_Data\Adminlogin.mdf" />
+    <Content Include="App_Data\Adminlogin_log.ldf">
+      <DependentUpon>Adminlogin.mdf</DependentUpon>
+    </Content>
+    <Content Include="B.png" />
+    <Content Include="background %281%29.jpg" />
+    <Content Include="bckg3.png" />
+    <Content Include="bckg4.png" />
+    <Content Include="BEGINNER.css" />
+    <Content Include="BLACK.png" />
+    <Content Include="BLUE.png" />
+    <Content Include="BOAT.png" />
+    <Content Include="BROWN.png" />
+    <Content Include="C.png" />
+    <Content Include="CAT.png" />
+    <Content Include="colourback.jpg" />
+    <Content Include="colours.css" />
+    <Content Include="colours.html" />
+    <Content Include="contact %281%29.png" />
+    <Content Include="contact %282%29.png" />
+    <Content Include="CONTACT.aspx" />
+    <Content Include="contact.png" />
+    <Content Include="CONTACTKIDS.aspx" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="D.png" />
+    <Content Include="dash.png" />
+    <Content Include="days.mp4" />
+    <Content Include="daysoftheweek.html" />
+    <Content Include="daysoftheweek\Friday.png" />
+    <Content Include="daysoftheweek\Monday.png" />
+    <Content Include="daysoftheweek\Saturday.png" />
+    <Content Include="daysoftheweek\Sunday.png" />
+    <Content Include="daysoftheweek\Thursday.png" />
+    <Content Include="daysoftheweek\Tuesday.png" />
+    <Content Include="daysoftheweek\Wednesday.png" />
+    <Content Include="Default.aspx" />
+    <Content Include="E.png" />
+    <Content Include="EditProfile.aspx" />
+    <Content Include="editprofileadmin.aspx" />
+    <Content Include="F.png" />
+    <Content Include="favicon.ico" />
+    <Content Include="feedback.aspx" />
+    <Content Include="feedbacks.html" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fruits.html" />
+    <Content Include="fruits.mp4" />
+    <Content Include="Fruits\apple.png" />
+    <Content Include="Fruits\avocado.png" />
+    <Content Include="Fruits\banana.png" />
+    <Content Include="Fruits\cherry.png" />
+    <Content Include="Fruits\coconut.png" />
+    <Content Include="Fruits\grapefruit.png" />
+    <Content Include="Fruits\grapes.png" />
+    <Content Include="Fruits\kiwi.png" />
+    <Content Include="Fruits\lemon.png" />
+    <Content Include="Fruits\lime.png" />
+    <Content Include="Fruits\mango.png" />
+    <Content Include="Fruits\melon.png" />
+    <Content Include="Fruits\NABA %281%29-22.png" />
+    <Content Include="Fruits\orange.png" />
+    <Content Include="Fruits\papaya.png" />
+    <Content Include="Fruits\peach.png" />
+    <Content Include="Fruits\pear.png" />
+    <Content Include="Fruits\pineapple.png" />
+    <Content Include="Fruits\plum.png" />
+    <Content Include="Fruits\pomegrante.png" />
+    <Content Include="Fruits\raspberry.png" />
+    <Content Include="Fruits\strawberry.png" />
+    <Content Include="furniture.css" />
+    <Content Include="furniture.html" />
+    <Content Include="furniture\armchair.jpg" />
+    <Content Include="furniture\bookcase.jpg" />
+    <Content Include="furniture\buffet.jpg" />
+    <Content Include="furniture\chair.jpg" />
+    <Content Include="furniture\chest.jpg" />
+    <Content Include="furniture\couch.jpg" />
+    <Content Include="furniture\cupboard.jpg" />
+    <Content Include="furniture\desk.jpg" />
+    <Content Include="furniture\dresser.jpg" />
+    <Content Include="furniture\furniture_bg.jpg" />
+    <Content Include="furniture\hallway.jpg" />
+    <Content Include="furniture\hanger.jpg" />
+    <Content Include="furniture\laundry-basket.jpg" />
+    <Content Include="furniture\long-stool.jpg" />
+    <Content Include="furniture\pouf.jpg" />
+    <Content Include="furniture\rack.jpg" />
+    <Content Include="furniture\rocking-chair.jpg" />
+    <Content Include="furniture\safe.jpg" />
+    <Content Include="furniture\settle.jpg" />
+    <Content Include="furniture\shoe-cabinet.jpg" />
+    <Content Include="furniture\sofa.jpg" />
+    <Content Include="furniture\stool.jpg" />
+    <Content Include="furniture\swivel-chair.jpg" />
+    <Content Include="furniture\table.jpg" />
+    <Content Include="furniture\tv-bench.jpg" />
+    <Content Include="furniture\wall-shelf.jpg" />
+    <Content Include="furniture\wardrobe.jpg" />
+    <Content Include="G.png" />
+    <Content Include="GA.png" />
+    <Content Include="GAn.png" />
+    <Content Include="GC.png" />
+    <Content Include="GD.png" />
+    <Content Include="GF.png" />
+    <Content Include="GFu.png" />
+    <Content Include="giftman.mp4" />
+    <Content Include="Global.asax" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="GRAY.png" />
+    <Content Include="GREEN.png" />
+    <Content Include="H.png" />
+    <Content Include="HOME.jpg" />
+    <Content Include="home.png" />
+    <Content Include="homelogin.html" />
+    <Content Include="homestyle.css" />
+    <Content Include="I.png" />
+    <Content Include="iconadmin.png" />
+    <Content Include="IMAGES\A.png" />
+    <Content Include="IMAGES\alphabetback.jpg" />
+    <Content Include="IMAGES\APPLE.png" />
+    <Content Include="IMAGES\B.png" />
+    <Content Include="IMAGES\BLACK.png" />
+    <Content Include="IMAGES\BLUE.png" />
+    <Content Include="IMAGES\BOAT.png" />
+    <Content Include="IMAGES\BROWN.png" />
+    <Content Include="IMAGES\C.png" />
+    <Content Include="IMAGES\CAT.png" />
+    <Content Include="IMAGES\colourback.jpg" />
+    <Content Include="IMAGES\D.png" />
+    <Content Include="IMAGES\E.png" />
+    <Content Include="IMAGES\F.png" />
+    <Content Include="IMAGES\G.png" />
+    <Content Include="IMAGES\GA.png" />
+    <Content Include="IMAGES\GAn.png" />
+    <Content Include="IMAGES\GC.png" />
+    <Content Include="IMAGES\GD.png" />
+    <Content Include="IMAGES\GF.png" />
+    <Content Include="IMAGES\GFu.png" />
+    <Content Include="IMAGES\GRAY.png" />
+    <Content Include="IMAGES\GREEN.png" />
+    <Content Include="IMAGES\H.png" />
+    <Content Include="IMAGES\I.png" />
+    <Content Include="IMAGES\J.png" />
+    <Content Include="IMAGES\K.png" />
+    <Content Include="IMAGES\KITE.png" />
+    <Content Include="IMAGES\L.png" />
+    <Content Include="IMAGES\LION.png" />
+    <Content Include="IMAGES\M.png" />
+    <Content Include="IMAGES\N.png" />
+    <Content Include="IMAGES\O.png" />
+    <Content Include="IMAGES\ORANGE.png" />
+    <Content Include="IMAGES\P.png" />
+    <Content Include="IMAGES\PINK.png" />
+    <Content Include="IMAGES\PURPLE.png" />
+    <Content Include="IMAGES\Q.png" />
+    <Content Include="IMAGES\R.png" />
+    <Content Include="IMAGES\red.png" />
+    <Content Include="IMAGES\S.png" />
+    <Content Include="IMAGES\SUN.png" />
+    <Content Include="IMAGES\T.png" />
+    <Content Include="IMAGES\TREE.png" />
+    <Content Include="IMAGES\U.png" />
+    <Content Include="IMAGES\V.png" />
+    <Content Include="IMAGES\VASE.png" />
+    <Content Include="IMAGES\W.png" />
+    <Content Include="IMAGES\watchAlphabet.png" />
+    <Content Include="IMAGES\watchAnimal.jpg" />
+    <Content Include="IMAGES\watchback.jpg" />
+    <Content Include="IMAGES\watchColours.png" />
+    <Content Include="IMAGES\WatchDays.jpg" />
+    <Content Include="IMAGES\watchFruit.jpg" />
+    <Content Include="IMAGES\watchFurniture.jpg" />
+    <Content Include="IMAGES\WHITE.png" />
+    <Content Include="IMAGES\X.png" />
+    <Content Include="IMAGES\XYLOPHONE.png" />
+    <Content Include="IMAGES\Y.png" />
+    <Content Include="IMAGES\YELLOW.png" />
+    <Content Include="IMAGES\Z.png" />
+    <Content Include="IMAGES\ZEBRA.png" />
+    <Content Include="index.html" />
+    <Content Include="J.png" />
+    <Content Include="K.png" />
+    <Content Include="kid.gif" />
+    <Content Include="Kids English World.png" />
+    <Content Include="KIDS.css" />
+    <Content Include="KIDSLANDING.aspx" />
+    <Content Include="KIDSMASTER.Master" />
+    <Content Include="BEGINNER.Master" />
+    <Content Include="KITE.png" />
+    <Content Include="L.png" />
+    <Content Include="LION.png" />
+    <Content Include="login.aspx" />
+    <Content Include="M.png" />
+    <Content Include="MASTER.csproj" />
+    <Content Include="MyProfile.aspx" />
+    <Content Include="N.png" />
+    <Content Include="O.png" />
+    <Content Include="ORANGE.png" />
+    <Content Include="P.png" />
+    <Content Include="PINK.png" />
+    <Content Include="PURPLE.png" />
+    <Content Include="Q.png" />
+    <Content Include="QUIZ.html" />
+    <Content Include="R.png" />
+    <Content Include="reading-book %281%29.png" />
+    <Content Include="red.png" />
+    <Content Include="Registration.Master" />
+    <Content Include="review.gif" />
+    <Content Include="settings.png" />
+    <Content Include="students.png" />
+    <Content Include="user.png" />
+    <Content Include="view.jfif" />
+    <Content Include="watchAlphabet.png" />
+    <Content Include="watchAnimal.jpg" />
+    <Content Include="watchback.jpg" />
+    <Content Include="watchColours.png" />
+    <Content Include="WatchDays.jpg" />
+    <Content Include="watchFruit.jpg" />
+    <Content Include="watchFurniture.jpg" />
+    <Content Include="watchvideos.css" />
+    <Content Include="WATCHVIDEOS.html" />
+    <Content Include="WHITE.png" />
+    <Content Include="X.png" />
+    <Content Include="XYLOPHONE.png" />
+    <Content Include="Y.png" />
+    <Content Include="YELLOW.png" />
+    <Content Include="Z.png" />
+    <Content Include="ZEBRA.png" />
+    <Content Include="QUIZalphabet.pdf" />
+    <Content Include="QUIZAnimals.pdf" />
+    <Content Include="QUIZcolours.pdf" />
+    <Content Include="QUIZdays.pdf" />
+    <Content Include="QUIZfruit.pdf" />
+    <Content Include="QUIZfurniture.pdf" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="KIDLOGIN.aspx" />
+    <Content Include="KIDSREGISTRATION.aspx" />
+    <Content Include="kidsstyling.css" />
+    <Content Include="kidstyling.css" />
+    <Content Include="KidsView.aspx" />
+    <Content Include="LOGO.jpg" />
+    <Content Include="ManageKidsProfile.aspx" />
+    <Content Include="MASTER.csproj.user" />
+    <Content Include="PIC 2.jpg" />
+    <Content Include="Picture1.png" />
+    <Content Include="REGISTRATION.css" />
+    <Content Include="REGISTRATION.aspx" />
+    <Content Include="S.png" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Site.Master" />
+    <Content Include="slider-bg.png" />
+    <Content Include="SUN.png" />
+    <Content Include="T.png" />
+    <Content Include="topics background.jpg" />
+    <Content Include="topics background2.jpg" />
+    <Content Include="TOPICS.aspx" />
+    <Content Include="topics.css" />
+    <Content Include="TREE.png" />
+    <Content Include="U.png" />
+    <Content Include="V.png" />
+    <Content Include="VASE.png" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="W.png" />
+    <Content Include="Web.config" />
+    <Content Include="Bundle.config" />
+    <Content Include="Site.Mobile.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aboutus.aspx.cs">
+      <DependentUpon>Aboutus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aboutus.aspx.designer.cs">
+      <DependentUpon>Aboutus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.aspx.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin.aspx.designer.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINLOGIN.aspx.cs">
+      <DependentUpon>ADMINLOGIN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMINLOGIN.aspx.designer.cs">
+      <DependentUpon>ADMINLOGIN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminReadPage.aspx.cs">
+      <DependentUpon>AdminReadPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminReadPage.aspx.designer.cs">
+      <DependentUpon>AdminReadPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="BEGINNER.Master.cs">
+      <DependentUpon>BEGINNER.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BEGINNER.Master.designer.cs">
+      <DependentUpon>BEGINNER.Master</DependentUpon>
+    </Compile>
+    <Compile Include="CONTACT.aspx.cs">
+      <DependentUpon>CONTACT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTACT.aspx.designer.cs">
+      <DependentUpon>CONTACT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CONTACTKIDS.aspx.cs">
+      <DependentUpon>CONTACTKIDS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTACTKIDS.aspx.designer.cs">
+      <DependentUpon>CONTACTKIDS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditProfile.aspx.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditProfile.aspx.designer.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editprofileadmin.aspx.cs">
+      <DependentUpon>editprofileadmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editprofileadmin.aspx.designer.cs">
+      <DependentUpon>editprofileadmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="feedback.aspx.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="feedback.aspx.designer.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="KIDLOGIN.aspx.cs">
+      <DependentUpon>KIDLOGIN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KIDLOGIN.aspx.designer.cs">
+      <DependentUpon>KIDLOGIN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KIDSLANDING.aspx.cs">
+      <DependentUpon>KIDSLANDING.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KIDSLANDING.aspx.designer.cs">
+      <DependentUpon>KIDSLANDING.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KIDSMASTER.Master.cs">
+      <DependentUpon>KIDSMASTER.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KIDSMASTER.Master.designer.cs">
+      <DependentUpon>KIDSMASTER.Master</DependentUpon>
+    </Compile>
+    <Compile Include="KIDSREGISTRATION.aspx.cs">
+      <DependentUpon>KIDSREGISTRATION.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KIDSREGISTRATION.aspx.designer.cs">
+      <DependentUpon>KIDSREGISTRATION.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KidsView.aspx.cs">
+      <DependentUpon>KidsView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KidsView.aspx.designer.cs">
+      <DependentUpon>KidsView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageKidsProfile.aspx.cs">
+      <DependentUpon>ManageKidsProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageKidsProfile.aspx.designer.cs">
+      <DependentUpon>ManageKidsProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyProfile.aspx.cs">
+      <DependentUpon>MyProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyProfile.aspx.designer.cs">
+      <DependentUpon>MyProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="REGISTRATION.aspx.cs">
+      <DependentUpon>REGISTRATION.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="REGISTRATION.aspx.designer.cs">
+      <DependentUpon>REGISTRATION.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.Master.cs">
+      <DependentUpon>Registration.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration.Master.designer.cs">
+      <DependentUpon>Registration.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TOPICMASTER.Master.cs">
+      <DependentUpon>TOPICMASTER.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TOPICMASTER.Master.designer.cs">
+      <DependentUpon>TOPICMASTER.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TOPICS.aspx.cs">
+      <DependentUpon>TOPICS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TOPICS.aspx.designer.cs">
+      <DependentUpon>TOPICS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="TOPICMASTER.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50020</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44313/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="TOPICMASTER.master.cs" Inherits="MASTER.TOPICMASTER" %>
+
+<!DOCTYPE html>
+
+
+<html>
+
+
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="title" runat="server"></asp:ContentPlaceHolder>
+    </title>
+    <link href="topics.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 191px;
+            height: 152px;
+        }
+        .auto-style2 {
+            width: 50px;
+            height: 41px;
+        }
+    </style>
+</head>
+
+
+
+
+<body style="height: 543px">
+    <div class="header">
+        <img src="LOGO.jpg" class="auto-style1" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br/>
+     
+    </div>
+    <form id="form1" runat="server">
+        <div class="wrapper"> 
+                 <div class="menu">
+                     <ul>
+                         <li><a href="KIDSLANDING.aspx"><img src="home.png" class="auto-style2" /></a></li>
+                         <li class="dropdown"><a href="#" class="dropbtn">TOPICS</a>
+                             <div class="dropdown-content">
+                                 <a href="BEGINNER.aspx">BEGINNER</a>
+                                 <a href="#">INTERMEDIATE</a>
+                                 <a href="#">ADVANCED</a>
+                             </div>
+                            </li>
+                       
+
+                         <li><a href="CONTACTKIDS.aspx">WATCH VIDEO</a></li>
+                         <li><a href="#">COMMENT SECTION</a></li>
+                     </ul>
+                     <p>
+                         &nbsp;</p>
+                 </div>
+                </div>
+
+                <div class="clear"></div>
+        <div class="content">
+
+            <asp:ContentPlaceHolder ID="Contentbody" runat="server"></asp:ContentPlaceHolder>
+        </div>
+      
+
+
+
+            <div class="clear"></div>
+            <div class="footer"></ div>
+                <h2>Copyright@KidsEnglishWorld.com</h2>
+        
+    </form>
+</body>
+</html>

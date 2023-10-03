@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Registration.master.cs" Inherits="WAPP_ASSIGNMENT.Registration" %>
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="title" runat="server"></asp:ContentPlaceHolder>
+    </title>
+    <link href="REGISTRATION.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 191px;
+            height: 152px;
+        }
+        .auto-style2 {
+            width: 50px;
+            height: 41px;
+        }
+        .auto-style3 {
+            width: 36%;
+            float: left;
+            margin-top: 54px;
+            min-height: 50px;
+            height: 121px;
+        }
+        .auto-style4 {
+            width: 48%;
+            float: left;
+            margin-top: 80px;
+            min-height: 50px;
+            height: 164px;
+            margin-left: 119px;
+        }
+        .auto-style5 {
+            width: 412px;
+            margin-left: 61px;
+        }
+        .auto-style6 {
+            width: 52px;
+            height: 52px;
+        }
+    </style>
+</head>
+
+
+
+<body style="height: 543px">
+    <div class="header">
+        <img src="LOGO.jpg" class="auto-style1" />
+        <br/>
+     
+    </div>
+    <form id="form1" runat="server">
+        <div class="wrapper"> 
+                 <div class="menu">
+                     <ul>
+                         <li><a href="KIDSLANDING.aspx"><img src="home.png" class="auto-style2" /></a></li>
+                         <li><a href="Aboutus.aspx">About</a></li>
+                         <li><a href="CONTACTKIDS.aspx">Contact</a></li>
+                         <li><a href="login">Log-in</a></li>
+                         <li><a href="REGISTRATION.aspx">Register</a></li>
+                         <li class="auto-style12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="KIDSLANDING.aspx">
+                             </a>
+                         <li style="height: 20px"><a href="ADMINLOGIN.aspx"><img alt="#" class="auto-style6" src="adminpic.jfif" /></li>
+                     </ul>
+                     <p>
+                         &nbsp;</p>
+                 </div>
+
+                <div class="clear"></div>
+        <div class="auto-style3">
+            
+            <asp:ContentPlaceHolder ID="Contentbody" runat="server"></asp:ContentPlaceHolder>
+            </a>
+        </div>
+
+                <div class="auto-style4">
+            
+            <asp:ContentPlaceHolder ID="Contentbody1" runat="server">
+                <p class="auto-style5">
+                    &nbsp;</p>
+                    </asp:ContentPlaceHolder>
+            </a>
+        </div>
+
+
+
+            <div class="clear"></div>
+            </form>
+    <p>
+        <br />
+    </p>
+</body>
+</html>

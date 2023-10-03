@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>
+
+    </title>
+    <link href="BEGINNER.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 191px;
+            height: 152px;
+        }
+
+        .auto-style2 {
+            width: 50px;
+            height: 41px;
+        }
+
+        h1 {
+            font-family: Snap ITC;
+            font-color: red;
+        }
+
+        table {
+            font-family: Snap ITC;
+            font-size: 15px border-collapse: collapse;
+            width: 90%;
+        }
+
+        td, th {
+            border: 2px solid pink;
+            text-align: left;
+            padding: 50px;
+            background-color: yellow;
+            font-size: 30px;
+    </style>
+
+
+    <body style="height: 543px">
+        <div class="header">
+            <img src="LOGO.jpg" class="auto-style1" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br />
+
+        </div>
+        <form id="form2" runat="server">
+            <div class="wrapper">
+                <div class="menu">
+                    <ul>
+                        <li><a href="homelogin.html"><img src="home.png" class="auto-style2" /></a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropbtn">TOPICS</a>
+                            <div class="dropdown-content">
+                                <a href="Alphabets.html">BEGINNER</a>
+                                <ul>
+                                    <li>
+                                        
+                                        <a href="Alphabets.html">ALPHABETS</a>
+                                        <a href="colours.html">COLOURS</a>
+                                    </li>
+                                </ul>
+
+                                <a href="index.html">INTERMEDIATE</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">FRUITS</a>
+                                        <a href="#">DAYS OF THE WEEK</a>
+                                    </li>
+                                </ul>
+                                <a href="#">ADVANCED</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">ANIMALS</a>
+                                        <a href="#">THINGS</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">WATCH VIDEO</a></li>
+                        <li><a href="#">MY PROFILE</a></li>
+                        <li><a href="#">COMMENT SECTION</a></li>
+                    </ul>
+                    <p>
+                        &nbsp;
+                    </p>
+                </div>
+            </div>
+
+
+                <div class=h1>
+<h1 style="color:blue;text-align:center;">Hi, Advanced Members are learning here together!</h1>
+</div>
+
+
+<h2 style="color:Tomato;text-align:center;font-family: Snap ITC;">LET'S LEARN ABOUT DIFFERENT FURNITURE ~</h2>
+
+
+
+
+<table>
+  
+  <tr>
+    <td><img src="furniture/armchair.jpg";width="300" height="300"></td>
+	<td><img src="furniture/bookcase.jpg";width="300" height="300"></td>
+	<td><img src="furniture/buffet.jpg";width="300" height="300"></td>
+  </tr>
+  
+  <tr>
+    <td><img src="furniture/chair.jpg";width="300" height="300"></td>
+	<td><img src="furniture/chest.jpg";width="300" height="300"></td>
+	<td><img src="furniture/couch.jpg";width="300" height="300"></td>
+  </tr>
+
+   <tr>
+    <td><img src="furniture/cupboard.jpg";width="300" height="300"></td>
+	<td><img src="furniture/desk.jpg";width="300" height="300"></td>
+	<td><img src="furniture/dresser.jpg";width="300" height="300"></td>
+  </tr>
+   
+ <tr>
+    <td><img src="furniture/hallway.jpg";width="300" height="300"></td>
+	<td><img src="furniture/hanger.jpg";width="300" height="300"></td>
+	<td><img src="furniture/laundry-basket.jpg";width="300" height="300"></td>
+  </tr>
+  
+  <tr>
+    <td><img src="furniture/long-stool.jpg";width="300" height="300"></td>
+	<td><img src="furniture/pouf.jpg";width="300" height="300"></td>
+	<td><img src="furniture/rack.jpg";width="300" height="300"></td>
+	</tr>
+	
+  
+  <tr>
+    <td><img src="furniture/rocking-chair.jpg";width="300" height="300"></td>
+	<td><img src="furniture/safe.jpg";width="300" height="300"></td>
+	<td><img src="furniture/settle.jpg";width="300" height="300"></td>
+  </tr>
+  
+ <tr>
+    <td><img src="furniture/shoe-cabinet.jpg";width="300" height="300"></td>
+	<td><img src="furniture/sofa.jpg";width="300" height="300"></td>
+	<td><img src="furniture/stool.jpg";width="300" height="300"></td>
+  </tr>
+
+ <tr>
+    <td><img src="furniture/swivel-chair.jpg";width="300" height="300"></td>
+	<td><img src="furniture/table.jpg";width="300" height="300"></td>
+	<td><img src="furniture/tv-bench.jpg";width="300" height="300"></td>
+  </tr>
+
+ <tr>
+    <td><img src="furniture/wall-shelf.jpg";width="300" height="300"></td>
+	<td><img src="furniture/wardrobe.jpg";width="300" height="300"></td>
+  </tr>
+
+</table>
+
+
+                <div class="clear"></div>
+     
+            <div class="clear"></div>
+            <div class="footer"></ div>
+                <h2>Copyright@KidsEnglishWorld.com</h2>
+
+
+        </form>
+
+</body>
+</html>
+

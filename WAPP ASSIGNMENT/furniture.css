@@ -1,0 +1,148 @@
+﻿body {
+    padding: 0;
+    margin: 0;
+    background-image: url(furniture/furniture_bg.jpg);
+    opacity: 2;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no repeat;
+}
+
+/*body*/
+.body {
+    font-family: Arial,Helvetica,Sans-Serif;
+    font-size: 50px;
+}
+
+/*header*/
+.header {
+}
+
+/*page*/
+.wrapper {
+    width: 1000px;
+    margin: auto;
+}
+
+/*Home page*/
+.content {
+    width: 100%;
+    border: 10px solid yellow;
+    border-radius: 5px 5px 5px 5px;
+    float: left;
+    margin-top: 8px;
+    min-height: 600px;
+    background: url('bckg3.png');
+    opacity: 2;
+    background-size: auto;
+    background-position: left center;
+    background-repeat: repeat;
+}
+
+/*Menu*/
+.menu {
+    width: 100%;
+    background-color: bisque;
+    margin: 0px 0px 10px;
+    padding: 0px;
+    height: 60px;
+    border-radius: 5px 5px 5px 5px;
+    color: indianred;
+}
+
+.navigation_first_item {
+    border-left: 0px;
+    border-radius: 5px 0 0 5px;
+}
+
+.navitems_s {
+    float: left;
+    border-right: 1px solid rgb(10 85 125);
+    border-left: 1px solid rgb(67 153 200);
+    height: 40px;
+}
+
+.menu ul {
+}
+
+    .menu ul li {
+        float: left;
+        display: block;
+        list-style: none;
+        border-right: 1px solid rgb(10 85 125);
+        border-left: 1px solid rgb(67 153 200);
+    }
+
+        .menu ul li.navigation_first_item:hover {
+            border-radius: 5px 0px 0px 5px;
+        }
+
+        .menu ul li a {
+            font-size: 13px;
+            font-weight: bold;
+            line-height: 40px;
+            padding: 8px 20px;
+            color: blue;
+            text-decoration: none;
+        }
+
+        .menu ul li:hover {
+            background-color: white;
+            border-right: 1px solid rgb(14, 89, 140);
+        }
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+    li a:hover, dropdown:hover .dropbtn {
+        background-color: red;
+    }
+
+li .dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: yellow;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px pink;
+    z-index: 1;
+}
+
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.clear {
+    clear: both;
+}
+
+/*Footer*/
+.footer {
+    padding: 15px;
+    text-align: center;
+}

@@ -1,0 +1,111 @@
+﻿body, div {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+/*body*/
+.body {
+    font-family: Arial,Helvetica,Sans-Serif;
+    font-size: 50px;
+    
+}
+
+/*header*/
+.header{
+  
+}
+    
+/*page*/
+.wrapper
+{
+    width: 1000px;
+    margin:auto;
+   
+  
+}
+
+/*Home page*/
+.content {
+    width: 100%;
+    border: 10px solid white;
+    border-radius: 5px 5px 5px 5px;
+    float: left;
+    margin-top: 8px;
+    min-height: 400px;
+    background-image: url('PIC 2.jpg');
+    opacity:0.8;
+    background-size: 1000px 800px;
+    background-position:center ;
+    position:center fixed;
+   
+}
+
+/*Menu*/
+.menu {
+    width: 100%;
+    background-color: white;
+    margin: 0px 0px 10px;
+    padding: 0px;
+    height: 60px;
+    border-radius: 5px 5px 5px 5px;
+    color: indianred;
+  
+}
+
+.navigation_first_item {
+    border-left: 0px;
+    border-radius: 5px 0 0 5px;
+  
+}
+
+.navitems_s {
+    float: left;
+    border-right: 1px solid rgb(10 85 125);
+    border-left: 1px solid rgb(67 153 200);
+    height: 40px;
+
+}
+
+.menu ul {
+
+}
+
+    .menu ul li {
+        float: left;
+        display: block;
+        list-style: none;
+        border-right: 1px solid rgb(10 85 125);
+        border-left: 1px solid rgb(67 153 200);
+    }
+
+        .menu ul li.navigation_first_item:hover {
+            border-radius: 5px 0px 0px 5px;
+        }
+
+        .menu ul li a {
+        font-size:13px;
+        font-weight:bold;
+        line-height:40px;
+        padding:8px 20px;
+        color: blue;
+        text-decoration:none;
+}
+
+        .menu ul li:hover {
+            background-color: white;
+            border-right:1px solid rgb(14, 89, 140);
+        }
+
+
+.clear 
+{
+    clear: both;
+}
+
+ /*Footer*/
+ .footer
+ {
+     padding: 15px;
+     text-align: center;
+ }

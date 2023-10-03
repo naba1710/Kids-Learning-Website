@@ -1,0 +1,109 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="KIDSMASTER.master.cs" Inherits="MASTER.KIDSMASTER" %>
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head runat="server">
+    <title>
+        Kids English World
+        <asp:ContentPlaceHolder ID="title" runat="server"></asp:ContentPlaceHolder>
+    </title>
+    <link href="KIDS.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 191px;
+            height: 152px;
+        }
+        .auto-style2 {
+            width: 50px;
+            height: 41px;
+        }
+        .auto-style5 {
+            width: 412px;
+            margin-left: 61px;
+        }
+        .auto-style6 {
+            width: 1000px;
+            margin: auto;
+            height: 1026px;
+        }
+        .auto-style7 {
+            padding: 15px;
+            text-align: center;
+            height: 92px;
+            width: 730px;
+            margin-left: 136px;
+            margin-top: 104;
+        }
+        .auto-style8 {
+            height: 324px;
+        }
+        </style>
+</head>
+
+
+
+
+<body style="height: 543px">
+    <div class="header">
+        <img src="LOGO.jpg" class="auto-style1" />
+        <br/>
+     
+    </div>
+    <form id="form1" runat="server">
+        <div class="auto-style6"> 
+                 <div class="menu">
+                     <ul>
+                         <li>&nbsp;<a href="KIDSLANDING.aspx"><img src="home.png" class="auto-style2" /></a></li>
+                         <li><a href="Aboutus.aspx">About</a></li>
+                         <li><a href="CONTACTKIDS.aspx">Contact</a></li>
+                         <li><a href="login">Log-in</a></li>
+                         <li><a href="REGISTRATION.aspx">Register</a> </li>
+                         <a href="ADMINLOGIN.aspx">
+                             
+                     </ul>
+                     <p>
+                         &nbsp;</p>
+            
+            </a>
+                     <ul>
+                         <a href="admin.aspx">
+                         <li></li>
+                         <li></li>
+                         
+                     </ul>
+                     <p>
+                         &nbsp;</p>
+                 </div>
+
+                <div class="clear"></div>
+        <div class="content">
+            
+            </a>
+            
+            <asp:ContentPlaceHolder ID="Contentbody" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        <div class="clear"></div>
+        <div class="auto-style3">
+            
+            </a>
+            
+            <asp:ContentPlaceHolder ID="Contentbody1" runat="server">
+                <p class="auto-style5">
+                    &nbsp;</p>
+                    </asp:ContentPlaceHolder>
+        </div>
+
+
+            <div class="auto-style7">
+            
+                <h2 class="auto-style8">&nbsp;</h2>
+                <h2 class="auto-style8">&nbsp;</h2>
+                <h2 class="auto-style8">Copyright@KidsEnglishWorld.com</h2>
+        </div>
+    </form>
+</body>
+</html>
